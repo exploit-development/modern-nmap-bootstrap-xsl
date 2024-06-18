@@ -9,7 +9,7 @@ Have a nice interface for checking the result of your Nmap scans.
 Add the `modern-nmap-bootstrap.xsl` as a stylesheet to your Nmap scan with the `--stylesheet` argument:
 
 ```bash
-nmap -sS -T4 -A -sC -oA output --stylesheet https://raw.githubusercontent.com/codesecure-org/modern-nmap-bootstrap-xsl/master/modern-nmap-bootstrap.xsl scanme.nmap.org scanme2.nmap.org
+nmap -sS -T4 -A -sC -oA output --stylesheet https://raw.githubusercontent.com/exploit-development/modern-nmap-bootstrap-xsl/master/modern-nmap-bootstrap.xsl scanme.nmap.org scanme2.nmap.org
 ```
 
 Directly open the file `input.xml` with your web browser; it will be formatted correctly. It should look like the `output.html` sample report.
@@ -33,14 +33,14 @@ Make sure to download the `modern-nmap-bootstrap.xsl` stylesheet beforehand.
 Insert the following line after `<!DOCTYPE nmaprun>` inside the XML file:
 
 ```xml
-<?xml-stylesheet href="https://raw.githubusercontent.com/codesecure-org/modern-nmap-bootstrap-xsl/master/modern-nmap-bootstrap.xsl" type="text/xsl"?>
+<?xml-stylesheet href="https://raw.githubusercontent.com/exploit-development/modern-nmap-bootstrap-xsl/master/modern-nmap-bootstrap.xsl" type="text/xsl"?>
 ```
 
 ### Scan Report
-![Scan Report](https://raw.githubusercontent.com/codesecure-org/modern-nmap-bootstrap-xsl/main/1.png)
+![Scan Report](https://raw.githubusercontent.com/exploit-development/modern-nmap-bootstrap-xsl/main/1.png)
 
 ### Detailed Overview
-![Detailed Overview](https://raw.githubusercontent.com/codesecure-org/modern-nmap-bootstrap-xsl/main/2.png)
+![Detailed Overview](https://raw.githubusercontent.com/exploit-development/modern-nmap-bootstrap-xsl/main/2.png)
 
 ### Summary Table
-![Summary Table](https://raw.githubusercontent.com/codesecure-org/modern-nmap-bootstrap-xsl/main/3.png)
+![Summary Table](https://raw.githubusercontent.com/exploit-development/modern-nmap-bootstrap-xsl/main/3.png)
